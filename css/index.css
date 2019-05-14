@@ -1,0 +1,287 @@
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media only screen and (max-width: 600px) {
+  #img-comp {
+    display: none;
+  }
+
+  #img-tablet {
+    display: none;
+  }
+
+  #img-phone {
+    display: none;
+  }
+}
+
+/* Larger than tablet */
+@media only screen and (min-width: 601px) {  
+  #img-comp {
+    display: none;
+  }
+
+  #img-tablet {
+    display: none;
+  }
+
+  #img-phone {
+    display: none;
+  }}
+
+/* Larger than desktop */
+@media only screen and (min-width: 800px) {  
+  /* for testing media queries */
+  #img-comp {
+    display: none;
+  }
+
+  #img-tablet {
+    display: none;
+  }
+
+  #img-phone {
+    display: none;
+  }
+
+  /*
+    Jumbotron Section
+  */
+
+  .jumbotron {
+    width: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 50vh;
+  }
+
+  #jumbotronVideo {
+    left: -1px;
+    top: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: -100;
+    width: 105%;
+    height: auto;
+    filter: blur(10px) grayscale(100%);
+    height: auto;
+  }
+
+  .jumbotronHeader {
+    z-index: 90;
+    background: rgba(0, 0, 0, 0.5);
+    width: 30%;
+    margin: 300px auto 0 auto;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    bottom: 10px;
+  }
+
+/*
+  Post-Jumbotron
+*/
+
+  .whiteBGoverlay {
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: auto;
+    z-index: 80;
+  }
+
+  .aboutUs, .products, .randomPics, .footer {
+    padding: 10px;
+    z-index: 85;
+  }
+
+/*
+  About Us
+*/
+
+  .aboutUs {
+    width: 80%;
+    margin: 0 auto 0 auto;
+  }
+
+/*
+  Products
+*/
+
+  .product-row-1, .product-row-2 {
+    display: flex;
+    margin-top: 1em;
+  }
+
+  .product-row-2 {
+    padding-bottom: 1em;
+  }
+  
+  .product-bp-preview {
+    width: auto;
+    height: 30em;
+    margin: 0 auto 0 auto;
+  }
+
+  .bp1, .bp2, .bp3, .bp4 {
+    margin: 1em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }  
+
+  .bp1 {
+    flex: 1;
+    order: 1;
+    text-align: center;
+  }
+
+  .bp2 {
+    flex: 1;
+    order: 2;
+    text-align: center;
+  }
+
+  .bp3 {
+    flex: 2;
+    order: 1;
+    text-align: center;
+  }
+
+  .bp4 {
+    flex: 2;
+    order: 2;
+    text-align: center;
+  }
+
+  .product-btn {
+    width: 50%;
+    height: 3em;
+    margin: 5em auto 0 auto;
+    background-color: #000;
+    cursor: pointer;
+    line-height: 3em;
+  }
+
+  .product-btn-text {
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 600;
+  }
+
+  .orderBtn {
+    width: 74%;
+    height: 5em;
+    margin: 0 auto 0 auto;
+    background-color: #000;
+    margin-top: 2em;
+    margin-bottom: 8em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5em;
+    cursor: pointer;
+  }
+
+  .orderBtn-text {
+    color: #fff;
+    font-size: 2em;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+/*
+  Random Pictures Section
+*/
+
+  .randomPics {
+    margin: 0 auto 0 auto;
+    text-align: center;
+  }
+
+  .randomPics-picsection {
+    display: inline;
+    text-align: center;
+  }
+
+  .randomPics-picsection img{
+    width: 30%;
+    display: inline-block;
+  }
+
+/*
+  Social Media
+*/
+  .socialLinks {
+    color: #b2bec3;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 130px;
+  }
+
+  .socialLinkks-Links {
+    padding: 20px;
+  }
+
+  i {
+    font-size: 4em;
+    padding: .2em;
+  }
+
+/*
+  Footer
+*/
+  footer {
+    width: 100%;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+
+  .footer {
+    height: 20em;
+    background-color: #636e72;
+    z-index: 85;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+  }
+
+  .footer a {
+    color: #fff;
+    display: flex;
+  }
+
+  .footer-left, .footer-right {
+    margin: 0 auto 0 auto;
+  }
+
+  .footer-left {
+    flex: 1;
+    order: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
+
+  .footer-right {
+    flex: 1;
+    order: 2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
+
+  .footer-end-row {
+    display: flex;
+  }
+
+  .footer-end {
+    flex: 1;
+    align-content: center;
+    text-align: center;
+  }
+}

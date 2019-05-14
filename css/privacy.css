@@ -1,0 +1,56 @@
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media only screen and (max-width: 600px) {
+  #img-comp {
+    display: none;
+  }
+
+  #img-tablet {
+    display: none;
+  }
+
+  #img-phone {
+    display: none;
+  }
+}
+
+/* Larger than tablet */
+@media only screen and (min-width: 601px) {  
+  #img-comp {
+    display: none;
+  }
+
+  #img-tablet {
+    display: none;
+  }
+
+  #img-phone {
+    display: none;
+  }}
+
+/* Larger than desktop */
+@media only screen and (min-width: 800px) {  
+  /* for testing media queries */
+  #img-comp {
+    display: none;
+  }
+
+  #img-tablet {
+    display: none;
+  }
+
+  #img-phone {
+    display: none;
+  }
+
+  /*
+    Privacy Area
+  */
+
+  .privacy {
+    width: 70%;
+    margin: 0 auto 8em auto;
+  }
+
+}
